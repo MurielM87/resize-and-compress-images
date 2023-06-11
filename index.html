@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Resize and compress images</title>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="upload_icon.jpg" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="upload_box">
+            <input type="file" accept="image/*">
+            <img src="upload_icon.png" alt="upload_icon" id="upload_icon">
+            <p>Browse File to Upload</p>
+        </div>
+        <div class="content">
+            <div class="row sizes">
+                <div class="column width">
+                    <label>Width</label>
+                    <input type="number">
+                </div>
+                <div class="column height">
+                    <label>Height</label>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="row checkboxes">
+                <div class="column ratio">
+                    <input type="checkbox" id="ratio" checked>
+                    <label for="ratio">Lock aspect ratio</label>
+                </div>
+                <div class="column quality">
+                    <input type="checkbox" id="quality">
+                    <label for="ratio">Reduce quality</label>
+                </div>
+            </div>
+            <button class="download_btn">Download Image</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
